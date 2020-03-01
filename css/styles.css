@@ -1,6 +1,9 @@
 .p1 {
-  background-image: url(../img/p1.jpeg);
+  text-align: center;
+  background-image: url(../img/p3.jpg);
+  padding-bottom: 300px;
+  padding-top: 550px;
   background-size: cover;
+  color: white;
   background-repeat: no-repeat;
-  background-color: 
 }
