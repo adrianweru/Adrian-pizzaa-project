@@ -7,3 +7,11 @@
   color: white;
   background-repeat: no-repeat;
 }
+.p2 {
+  background-image: url(../img/p6.jpg);
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-size: cover;
+  color: Aqua;
+  background-repeat: no-repeat;
+}
