@@ -25,3 +25,11 @@
   color: blue;
   text-decoration: underline;
 }
+.p5 {
+  background-image: url(../img/p17.jpeg);
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aqua;
+}
