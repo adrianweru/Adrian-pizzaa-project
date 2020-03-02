@@ -1,5 +1,4 @@
 
-
 function getSizeCost() {
     var selectedSize = document.getElementById("size").value;
     return parseInt(selectedSize);
@@ -63,16 +62,17 @@ function calctotalPrice(e) {
     alert("Your order of " + getNumber() + " pizzas has been calculated.the amount to be paid is " + totalPrice +"." )
 
 }
-
+//delivary
 $(document).ready(function () {
+
     $("#delivery").submit(function (event) {
 
         var name = $("input#name", this).val();
         var number = $("input#number", this).val();
         var location = $("input#location", this).val();
 
-        alert("How are you? " + name + ".the order you have succesfully placed is been worked on an will be delivered to " +  location + " within one hour.The delivery will cost ksh 200/= Thank you for choosing Adrian pizzaa palace.");
-
+        alert("Hello " + name + ".the order you have succesfully placed is been worked on and will be delivered to " +  location + " within one hour.The delivery will cost ksh 200/= Thank you for choosing Adrian pizzaa palace.");
+  //$(this).get(0).reset();
          event.preventDefault();
     });
 
