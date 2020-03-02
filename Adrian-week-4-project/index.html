@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquey.com/jquery-3.4.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>PIZZA PALATE</title>
+</head>
+<body>
+  <div class="p1">
+    <h1>ADRIAN'S PIZZA PALACE</h1>
+    <h1>HERE WE SATISFY YOUR NEEDS TO THE FULLEST</h1>
+  </div>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>ALL ABOUT ADRIAN'S PIZZA PALACE</h1>
+    </div>
+  </div>
+  <div class="p2">
+    <div class="row">
+      <div class="col-md-4">
+        <h2><strong><em>PIZZA CRUSTS TYPES</em></strong></h2>
+        <ul>
+          <li>Neopolitan style</li>
+          <li>St louis style</li>
+          <li>New york style</li>
+          <li>Gluten_free</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2><strong><em>PIZZA SIZES</em></strong></h2>
+        <ul>
+          <li>small</li>
+          <li>medium</li>
+          <li>large</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2><strong><em>PIZZA TOPPINGS</em></strong></h2>
+        <ul>
+          <li>Pepperoni and cheese</li>
+          <li>Chicken and BBQ</li>
+          <li>Bacon and Pineapple</li>
+          <li>Bacon and Sausage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="p3">
+    <h1>MENU</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="img/p7.jpeg" width="300px" height="200px" class="pep" >
+      <h5>Pepperoni_pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p8.jpeg" width="300px" height="200px" class="mag">
+      <h5>Margherita_Pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p9.jpeg" width="300px" height="200px" class="BBQ">
+      <h5>BBQ_Chicken_Pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p10.jpeg" width="300px" height="200px" class="vege">
+      <h5>All_vegetarian_Pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p11.jpeg" width="300px" height="200px" class="mlp">
+      <h5>Meet_lover's_Pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p12.jpeg" width="300px" height="200px" class="louis">
+      <h5>St.Louis_Pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p13.jpeg" width="300px" height="200px" class="Nyc">
+      <h5>New york_Pizza</h5>
+    </div>
+    <div class="col-md-3">
+      <img src="img/p14.jpeg" width="300px" height="200px" class="cali">
+      <h5>California_Pizza</h5>
+    </div>
+  </div>
+
+  <div id="order"></div>
+
+    <div class="well">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Enter your details below for you to get your order </h2>
+          <form action="" id="pizzainfo">
+            <label for="">Choose your pizza size</label>
+            <select class="form-control" name="size" id="size">
+              <option value="1200">Large @ ksh 1200</option>
+              <option value="900">Medium @ ksh 900</option>
+              <option value="600">Small @ ksh 600</option>
+            </select>
+            <label for="">Choose your desired crust type</label>
+            <select class="form-control" name="" id="crust">
+              <option value="230" name="crust">stuffed crust @ ksh230
+                <option value="250" name="crust">Crispy @ ksh 250
+                  <option value="300" name="crust">Glutten free @ ksh 300
+                  </select>
+                  <label for="">Choose your Desired toppings</label> <br>
+                  <input value="150" type="checkbox" id="toppingone">pepperoni and cheese
+                  <input value="150" type="checkbox" id="toppingone">Sausage and calaousaw
+                  <input value="150" type="checkbox" id="toppingone">chicken and BBQ
+                  <input value="150" type="checkbox" id="toppingone">Bacon and pineapple
+                  <input value="150" type="checkbox" id="toppingone">Bacon and sausage<br>
+
+                  <label for="name">Input Quantity</label>
+                  <input class="form-control form-group" type="text" id="numberofpizza" required>
+                  <button name="button" type="submit" id="submit" value="Check-Out"
+                  onclick="calctotalPrice()">Submit</button>
+                </form>
+
+              </div>
+              <div class="col-md-6">
+                <div id="formlocation">
+                  <h3>If you would like your pizza To Be delivered to your place<br> Enter your location details below</h3>
+                  <form id="delivery">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" name="" id="name" required>
+                    <label for="location">Location</label>
+                    <input class="form-control" type="text" id="location" required>
+                    <label for="phonenumber">Phone Number</label>
+                    <input class="form-control" type="tel"  id="number" required> <br>
+                    <button type="submit" name="button" id="submit">submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

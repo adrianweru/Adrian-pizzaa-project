@@ -1,0 +1,46 @@
+.p1 {
+  text-align: center;
+  background-image: url(../img/p3.jpg);
+  padding-bottom: 300px;
+  padding-top: 550px;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
+.p2 {
+  background-image: url(../img/p6.jpg);
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-size: cover;
+  color: Aqua;
+  background-repeat: no-repeat;
+}
+.p3 {
+  text-align: center;
+  text-decoration: underline;
+  color: orange;
+}
+.p4 {
+  text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
+.p5 {
+  background-image: url(../img/p17.jpeg);
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aqua;
+}
+.location {
+  text-align: center;
+}
+.well {
+  background-image: url(../img/p3.jpg);
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
