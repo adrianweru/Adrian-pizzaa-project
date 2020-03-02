@@ -1,70 +1,79 @@
-$("document").ready(function(){
-  function person (name,email,phone){
-    this.name = name;
-    this.email = email;
-    this.phone = phone;
-  }
 
-  person.prototype.profile = function(){
-    $("#name").text("Your name is "+this.name)
-    $("#email").text("Your Email address is" +this.email)
-    $("#phone").text("Your Phone number is "+this.phone)
-  }
-  $("#profile").click(function(){
-    let name = $(".name").val();
-    let email= $(".Email").val();
-    let phone= $(".phone").val();
-    let location= $(".location").val();
-    let user = new person(name,email,phone,location)
 
-    user.profile()
-  })
-  function ordering(size,toppings,delivery,type,number){
-    this.size = size;
-    this.toppings= toppings;
-    this.delivery = delivery;
-    this.type = type;
-    this.number = number;
-  }
-  ordering.prototype.price = function(){
-    let price=0;
-    let Total=0;
-    if (this.size === "Large"){
-      price=1000;
-      Total = price + 400;
-      Total = Total * this.number;
-    }
-    else if (this.size === "Medium"){
-      price = 750;
-      Total = price + 400;
-      Total =Total * this.number;
-    }
-    else if(this.size ==="small"){
-      price=450;
-      Total = price + 400;
-      Total = Total * this.number;
-    }
-    else alert("Enter your preferences in the appropriate manner")
-    var delivery=prompt("Would you like to be delivered to or come to our restaurant ?")
-    if(delivery === "delivered"){
-      alert("your meal is on your way but you have to pay 350 for the delivery expense")
-      Total = Total + 350;
-      var location=prompt("please enter your residence sir or madam")
-      $("#location").text("Your location is" +location)
-    }
-    else if (delivery === "come to our restaurant"){
-      alert("we are expecting you soon and welcome in advance");
-    }
-    else alert("enter your details correctly")
-    $("#details").text("Your pizza will be ready soon, the total price is " +Total +"Your order is "+this.type +" And your pizza size is " this.size);
+function getSizeCost() {
+    var selectedSize = document.getElementById("size").value;
+    return parseInt(selectedSize);
+}
 
-    $(".calc").click(function(){
-      let type = $("#type").val()
-      let size= $("#size").val();
-      let toppings = $(".toppings").val();
-      let number = $(".number").val();
-      let delivery = $(".delivery").val();
-      let myOrder = new order(size,toppings,number,delivery,type);
-      myOrder.price()
+function getCrustCost() {
+    var selectedCrust = document.getElementById("crust").value;
+    return parseInt(selectedCrust);
+}
+function getNumber() {
+    var selectedNumber = document.getElementById("numberofpizza").value;
+    return parseInt(selectedNumber);
+}
+function mushrooms() {
+    var mushroom = 0;
+    var addMushroom = document.getElementById("toppingone");
+    if (addMushroom.checked === true) {
+        mushroom = 150;
+    }
+    return parseInt(mushroom);
+}
+
+function sausages() {
+    var sausage = 0;
+    var addsausage = document.getElementById("toppingone");
+    if (addsausage.checked === true) {
+        sausage = 140;
+    }
+    return parseInt(sausage);
+}
+function onions() {
+    var onion = 0;
+    var addonions = document.getElementById("toppingone");
+    if (addMushroom.checked === true) {
+        onion = 130;
+    }
+    return parseInt(onion);
+}
+function tikkaSaucee() {
+    var tikkaSauce = 0;
+    var addtikkaSauce = document.getElementById("toppingone");
+    if (addtikkaSauce.checked === true) {
+        tikkaSauce = 120;
+    }
+    return parseInt(tikkaSauce);
+}
+function mozarellaCheese() {
+    var cheese = 0;
+    var addmozarellaCheese = document.getElementById("toppingone");
+    if (addmozarellaCheese.checked === true) {
+        cheese = 110;
+    }
+    return parseInt(cheese);
+}
+
+function calctotalPrice(e) {
+    event.preventDefault();
+    var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
+
+        console.log(totalPrice);
+    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+
+}
+
+$(document).ready(function () {
+    $("#delivery").submit(function (event) {
+
+        var name = $("input#name", this).val();
+        var number = $("input#number", this).val();
+        var location = $("input#location", this).val();
+
+        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for choosing darolles pizzeria palace.");
+
+         event.preventDefault();
     });
-  })
+
+});
