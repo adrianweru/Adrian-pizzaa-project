@@ -1,10 +1,10 @@
-##Pizza-palace
-#A website for Pizza-palace, {2020 version}
-#By Adrian kinyua
-#Description
+## Pizza-palace
+# A website for Pizza-palace, {2020 version}
+# By Adrian kinyua
+# Description
 This is a website for Pizza-palace, a chain of restraunts found in major cities in Kenya. It provides information about Pizza-palace including what its all about and the menu of food offered by its chain of restraunts.The website allows users to pick the size of pizza they want,the crust size,the variety and types of topping they want and whether they would like to collect the pizza themselves or for it to be delivered to them.
 
-#BDD
+# BDD
 The webpage needed an intro.
 It needed an about section.
 It needed a menu section.
@@ -20,16 +20,16 @@ Ordering section needs to alert user that the request has been received.
 Setup/Installation Requirements
 You can gain access to the code for the web landing page by forking from my github repository named Pizza .You can then make an offline copy by: *copying the url from my github repository. *typing git clone in the terminal followed by pasting the url You can also gain access of the web application online at 
 
-Known Bugs
+# Known Bugs
 .There are minimal bugs in the webpage.The media queries are not very effective when resizing .The images in the portfolio are also not sized effectively to fit into the webpage.The what we do icons are also not aligned.Report if there are other unknown bugs.
 
-#Technologies Used
+# Technologies Used
 I used html in writing the content of the landing page, resizing the images and making the headings bold.}I used css and bootstrap in styling the webpage and hiding the toggle sections.I used javascript and jquery to add the toggle effects in the what we do section and hover effect in the ordering section.I used html to make the forms at the contact section. Javascript prototypes and constructors were used in the ordering section.
 
-#Support and contact details
+# Support and contact details
 If you run into any issues or have questions, ideas or concerns contact me at adrianweru@gmail.com/0746301530 or make a contribution to the code.
 
-#License
+# License
 *{MIT License
 
 Copyright (c) [2020] [Adrian kinyua]
