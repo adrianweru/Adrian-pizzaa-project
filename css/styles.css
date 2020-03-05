@@ -36,3 +36,11 @@
 .location {
   text-align: center;
 }
+.well {
+  background-image: url(../img/p3.jpg);
+  padding-bottom: 40px;
+  padding-top: 30px;
+  background-size: cover;
+  color: white;
+  background-repeat: no-repeat;
+}
